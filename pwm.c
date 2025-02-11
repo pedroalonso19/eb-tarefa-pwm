@@ -49,9 +49,8 @@ int main() {
     pwm_setup();
     led_setup();
 
-    printf("Sistema inicializado.\n");
-
     sleep_ms(1000); // Atraso de 1 segundo para mudança no Duty Cycle
+    printf("Sistema inicializado.\n");
 
     printf("Duty Cycle em 12%%.\n");
     pwm_set_gpio_level(PWM_LED, 6000); // Definindo o duty cycle de 12%
