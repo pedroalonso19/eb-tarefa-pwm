@@ -2,7 +2,7 @@
 #include "pico/stdlib.h"
 #include "hardware/pwm.h"
 
-#define PWM_LED 22 // Pino que será configurado como PWM. 22 - Servo (Simulação WokWi); 12 - LED (Placa BitDogLab);
+#define PWM_LED 12 // Pino 22 - Servo (wokwi) e Pino 12 - Led rgb (placa bitdoglab)
 
 const uint16_t WRAP_PERIOD = 50000;     // Valor do WRAP - máxima contagem
 const float PWM_DIVISER = 50.0;         // Divisor do clock
@@ -29,7 +29,7 @@ void pwm_setup()
 
     int freqPWM = 125000000 / ((PWM_DIVISER) * (WRAP_PERIOD)); // Calculando o valor da frequência do PWM
 
-    printf("Frequência do PWM = %i Hz\n", freqPWM); // Imprimindo o valor da frequência
+    printf("Frequência do PWM ajustada para %i Hz\n", freqPWM); // Imprimindo o valor da frequência
 }
 
 int main()
@@ -39,7 +39,7 @@ int main()
     pwm_setup();
 
     sleep_ms(1000); //Atraso de 1 segundo para incialização da simulação
-    printf("Sistema inicializado.\n");
+    printf("Sistema iniciado.\n");
 
     printf("Duty Cycle em 12%%.\n");
     pwm_set_gpio_level(PWM_LED, DUTY_CYCLE_HIGH); // Definindo o duty cycle de 12%
@@ -56,7 +56,7 @@ int main()
 
     sleep_ms(5000); // Atraso de 5 segundos para a próxima mudança
 
-    printf("Variação do Duty Cycle de 2.5%% até 12%%.\n");
+    printf("Variando Duty Cycle entre 2.5%% e 12%%.\n");
 
     double level = DUTY_CYCLE_LOW;
     int control = 1;
