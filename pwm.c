@@ -38,7 +38,7 @@ int main()
     
     pwm_setup();
 
-    sleep_ms(1000); // Atraso de 1 segundo para mudança no Duty Cycle
+    sleep_ms(1000); // Atraso de 1 segundo para incialização
     printf("Sistema inicializado.\n");
 
     printf("Duty Cycle em 12%%.\n");
