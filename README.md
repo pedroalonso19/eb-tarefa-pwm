@@ -1,5 +1,4 @@
 # EmbarcaTech - Tarefa PWM
-
 ## Atividade
 Com o emprego do módulo PWM (do inglês, Pulse Width Modulation),
 presente no microcontrolador RP2040, projete um sistema com a
@@ -39,10 +38,8 @@ com um atraso de ajuste de 10ms.
 um experimento com o código deste exercício utilizando o LED
 RGB – GPIO 12.
 
-## Teste WOKWI Web
-Simulação do programa utilizando o Wokwi Web: https://wokwi.com/projects/422635250771067905
-
 ## Discente
 Pedro Alonso Ribeiro Ferreira da Silva
 
 ## Vídeo ensaio
+https://youtube.com/shorts/0_byU8jUGcY?si=RlHe7569rqdO25LF
