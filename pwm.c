@@ -38,8 +38,13 @@ int main()
     
     pwm_setup();
 
+<<<<<<< HEAD
     sleep_ms(1000); //Atraso de 1 segundo para incialização da simulação
     printf("Sistema iniciado.\n");
+=======
+    sleep_ms(1000); // Atraso de 1 segundo para mudança no Duty Cycle
+    printf("Sistema inicializado.\n");
+>>>>>>> f29f0f55aad1161f96c6ba5bc1d6131c1357bb56
 
     printf("Duty Cycle em 12%%.\n");
     pwm_set_gpio_level(PWM_LED, DUTY_CYCLE_HIGH); // Definindo o duty cycle de 12%
