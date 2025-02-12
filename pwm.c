@@ -2,7 +2,7 @@
 #include "pico/stdlib.h"
 #include "hardware/pwm.h"
 
-#define PWM_LED 12 // Pino 22 - Servo (wokwi) e Pino 12 - Led rgb (placa bitdoglab)
+#define PWM_LED 22 // Pino 22 - Servo (wokwi) e Pino 12 - Led rgb (placa bitdoglab)
 
 const uint16_t WRAP_PERIOD = 50000;     // Valor do WRAP - máxima contagem
 const float PWM_DIVISER = 50.0;         // Divisor do clock
